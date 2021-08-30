@@ -1,0 +1,782 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@300&family=Ropa+Sans&family=Staatliches&display=swap'); */
+* {
+    padding: 0;
+    margin: 0;
+    font-family:'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(221, 220, 220);  /* lila: 147, 0, 254  -- 	57.6, 0, 99.6*/
+}
+
+a {
+    text-decoration: none;
+}
+
+/* MENU  */
+header {
+    position: fixed;
+    top: 0;
+    width: 99%;
+}
+#logo {
+    z-index: 50;
+}
+
+.tituloSeccion {
+    width: max-content;
+    margin: auto;
+    background: #AB08A8;
+}
+.tituloSeccion img{
+    width: 100%;
+}
+h2 {
+    font-family: 'Staatliches', cursive;
+    font-size: 5rem;
+    font-weight: lighter;
+    color: white;
+    padding: 0.5em;
+}
+h3 {
+    font-family: 'Staatliches', cursive;
+    font-size: 5.5rem;
+    font-weight: lighter;
+    color: white;
+    padding: 0.7em 1em;
+}
+.marginxxx {
+    margin-bottom: 4rem;
+}
+.marginxx {
+    margin-bottom: 3rem;
+}
+.marginx {
+    margin-bottom: 2rem;
+}
+.tituloJuego {
+    width: 30rem;
+    margin: auto;
+}
+.tituloJuego img{
+    width: 100%;
+}
+.centrado {
+    text-align: center;
+    align-self: center;
+}
+nav {
+    z-index: 10;
+    min-width: 100%;
+}
+#menu {
+    width: 100%;
+    /*display: flex;*/
+    height: max-content;
+    background-color: #2A0445;
+    /*padding: .3rem;*/
+    box-shadow: 0 15px 15px rgba(0, 0, 0, .3);
+    
+}
+#logo, #menu-line {
+    display: flex;
+    height: max-content;
+    
+    background-color: #2A0445;
+    color: white;
+    padding: .5em;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#logo{
+    width: 100%;
+    background-color: black;
+    justify-content: flex-start;
+    padding-left: 1rem;
+}
+.toggle-menu {
+    margin-left: 1rem;
+    cursor: pointer;
+    align-self: flex-start;
+}
+.tituloContacto {
+    width: max-content;
+    margin: auto;
+    /*margin-top: 2rem;*/
+}
+.tituloContacto h2{
+    padding: 0;
+}
+/*
+.icon {
+    padding: 0 .5rem;
+    z-index: 150;
+    font-size: x-large;
+    color:   rgb(14, 34, 61, .8);
+    /*display: block;
+}*/
+.icon-data {
+    padding: .5rem;
+    /*padding-top: .5rem;
+    padding-bottom: .5rem;*/
+    z-index: 150;
+    cursor: pointer;
+    font-size: 2rem;
+    color:  rgba(255, 255, 255, .8);
+    display: block;
+}
+
+.icon-data:hover {
+    background: rgba(255, 255, 255, .2);
+    border: rgba(255, 255, 255, .8) solid 1px;
+    border-radius: 3px;
+}
+
+.icon-data a:visited {
+    color: white;
+}
+/*
+#icons {
+    display: flex;
+    flex-direction: row;
+}*/
+#small-menu {
+    display: none;
+    max-width: max-content;
+}
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /*flex-direction: column;*/
+    list-style: none;
+    background-color: #2A0445;
+}
+nav ul li {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    /*border-right: black solid 1px;*/
+    border-bottom: 0;
+    text-align: center;
+}
+nav ul li:hover{
+    
+    background: rgb(105, 26, 161) ;
+}
+nav ul li a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    /*font-weight: bold;*/
+    line-height: 1.5rem;
+    padding: .3rem;
+    /*padding: 0 2em 0 1em;*/
+}
+nav ul li a:hover{
+    color: white;
+}
+#menu-line {
+    display: none;
+}
+.image {
+    width: 100%;
+    float: left;
+    /*border: white solid 3px;*/
+    /*box-shadow: rgba(0, 0, 0, .2) 10px 20px 20px;*/
+}
+.cuerpoJuego{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.botonesJuegos {
+    width: 100%;
+    text-align: center;
+}
+.botonItchio {
+    float: left;
+}
+.botonGooglePlay{
+    float: left;
+    width: 12rem;
+}
+.botonGooglePlay img {
+    width: 100%;
+}
+.botonVerTrailer {
+    width: 13rem;
+    margin-left: 10%;
+    float: left;
+
+    background-color: #AB08A8;
+    height: 3.2rem;
+    border-radius: 20px;
+    padding: 1rem;
+}
+.botonVerTrailer a {
+    color: white;
+    font-size: 1.2rem;
+}
+
+
+.video {
+    width: 360px;
+    height: 315px;
+    border: white solid 3px;
+    box-shadow: rgba(0, 0, 0, .2) 10px 20px 20px;
+    margin: 2rem 0;
+}
+.image1 {
+    float: left;
+    margin: 5% 10%;
+    width: 15%;
+    /*min-width: 300px;*/
+}
+.image2 {
+    box-shadow: rgba(0, 0, 0, .2) 10px 20px 20px;
+}
+
+.imagejuego1 {
+    width: 100%;
+}
+.imagejuego2 {
+    width: 55%;
+    margin: auto;
+}
+.logoItchio{
+    vertical-align: middle; 
+    width: 9rem;
+}
+.foto{
+    width: 100%;
+    height:auto;
+}
+.fotoPersonal {
+    width: 80%;
+    height: 100%;
+    /*min-width: 100px;*/
+    margin: 0 0 1rem 0;
+    border-radius: 50%;
+    transition: 1s;
+}
+.fotoPersonal:hover {
+    width: 90%;
+    margin : 0;
+}
+.dosCol{
+    display: flex;
+    width: 3%;
+}
+.dosCol img{
+    width: 100%;
+    margin-right: 1rem;
+}
+.text1 {
+    float: left;
+    width: 50%;
+    color: white ;
+    line-height: 1.5rem;
+    text-align: center;
+}
+.text5 {
+    float: left;
+    width: 100%;
+    /*color: rgba(255, 255, 255, .7);*/
+    color: white;
+    line-height: 1.4rem;
+    text-align: center;
+}
+#content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.divsuperior {
+    width: 100%;
+    height: 35vh;
+}
+.divinferior {
+    width: 100%;
+    /*height: 50vh;*/
+    background: #AB08A8;
+    color: white;
+}
+p {
+    margin-top: 1rem;
+}
+h5 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    text-shadow: black;
+}
+.fila1, .fila2, .fila3 {
+    display: flex;
+    width: 100%;
+}
+.fila1, .fila3{
+    text-align: center;
+}
+.fila2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.colum1 {
+    float: left;
+    width: 50%;
+}
+.colum1 img {
+    width: 100%;
+}
+.logoFooter {
+    width: 30%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+.logoFooterImg {
+    width: 35%;
+    margin: 0;
+} 
+.logoFooterTexto {
+    margin-top: 0;
+    color: white;
+}
+.colum2 {
+    float: left;
+    display: flex;
+    width: 50%;
+    min-width: max-content;
+    /*border-left: white solid 7px;*/
+    padding: 0;
+    vertical-align: middle;
+    margin-top: 1rem;
+}
+.colum2 a{
+    color: white;
+}
+.integrantes {
+    width: 20%;
+    min-width: 150px;
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 1.4rem;
+    padding-right: 2%;
+    margin-bottom: 2rem;
+    float: left;
+}
+.integrantes a {
+    color: white;
+    font-family:'Open Sans', sans-serif;
+    font-size: 0.7rem ;
+    background-color: rgba(255, 255, 255,0.5) ;
+    padding: 0.2rem 1rem;
+    border-radius: 20px;
+}
+
+.juegos {
+    width: 50%;
+    float: left;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 1rem;
+}
+.juegos a img{
+    transition: 1s;
+}
+.juegos a img:hover{
+    width: 110%;
+}
+.justify {
+    text-align: justify;
+    margin-right: 2rem;
+}
+.justify2 {
+    line-height: 1.5rem;
+}
+
+
+#page1, #page2, #page3, #page4, #page5, #page6, #page7 {
+    width: 100%;
+    min-height: 98vh;
+    height: max-content;
+    padding: 10rem 3rem 2rem 3rem;
+    transition: all .7s;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#page7 {
+    /*background: rgb(192, 192, 192) ;*/
+    background: rgb(241, 240, 240) ;
+}
+#page4 {
+    /*background: rgb(192, 192, 192) ;*/
+    background: rgb(105, 26, 161) ;
+}
+#page1 {
+    /*background-image: linear-gradient(0deg, #4A0B78 , #6F13B1, #2A0445 70%);*/
+    background-image: linear-gradient(0deg, #4A0B78 0%, #2A0445 70%);
+}
+#page2 {
+    background-image: linear-gradient(0deg,#6F13B1 0%, #4A0B78 50%);
+}
+#page3 {
+    background-image: linear-gradient(0deg, #B090C8 0%,  #6F13B1 83%);
+}
+#page5 {
+    background:#AB08A8; /* #BFB8C3 ;*/
+    padding: 0;
+}
+#page6 {
+    background:  #B090C8 ; 
+    color: black;
+}
+#page7{
+    background-image: linear-gradient(0deg, #BFB8C3 0%,  #B090C8 83%);
+    color: black;
+}
+.justificado {
+    width: 50%;
+    text-align: center;
+    padding: 5%;
+}
+
+#equipo {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.tarea{
+    color: #AEB9C0;
+    font-family:'Open Sans', sans-serif;
+    font-size: 1rem ;
+}
+.bodyjuegos {
+    width: 100%;
+    background: #E7d7f3;
+    padding: 2rem 0 1rem 0;
+    box-shadow: rgba(0, 0, 0, .3) 0 0 20px 2px;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+}
+.text1, .text2, .text3, .text4, .text5, .text6, .text7 {
+    width: 100%;
+    min-width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+.text7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.seccionlogo {
+    display: flex;
+    flex-wrap: wrap;
+    /*background-color: #6F13B1;*/
+    background-image: linear-gradient(0deg, rgba(111, 19, 177, 1) 0%,  rgba(111, 19, 177, 0) 83%);
+    margin: 2%;
+}
+.seccionlogo p {
+    width: 60%;
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+
+}
+form {
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    padding: 1rem;
+    margin-top: 3rem;
+
+}
+form ul {
+    list-style: none;
+}
+form li + li {
+    margin-top: 1rem;
+}
+textarea {
+    vertical-align: top;
+    height: 5rem;
+}
+input,
+textarea {
+  width: 30rem;
+  box-sizing: border-box; /* Hacer coincidir los bordes del campo del formulario */
+  border: 1px solid #999;
+}
+
+.button {
+    width: max-content;
+    margin: auto;
+    padding: 1rem 3rem;
+    background-color: #AB08A8;
+    color: white;
+    border: solid 1px white;
+    border-radius: 5px;
+}
+.redes {
+    width: 50%;
+    max-width: max-content;
+    margin: 2rem auto;
+}
+.formulario {
+    width: 80%;
+    height: 60vh;
+    border: 0;
+    margin: 0;
+}
+h1 {
+    font-weight: normal;
+}
+.texto-logo {
+    font-family: 'Anton', sans-serif;
+    margin-left: 1rem;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+    display: block;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.texto-logo2 {
+    font-family: 'Ropa Sans', sans-serif;
+    font-size: 1rem;
+    font-weight:bold;
+    color: gray;
+    margin-left: 1rem;
+    line-height: 1rem;
+}
+.texto-logo3 {
+    margin-top: 0.4rem;
+    font-size: 2.5rem;
+    line-height: 2.2rem;
+}
+.texto-logo4 {
+    font-size: 1.2rem;
+    color: rgb(148, 148, 148);
+}
+
+
+@media (max-width:1280px) {
+    .toggle-menu, #menu-line {
+        display: block;
+    }
+    #menu, #data {
+        display: none;
+    }
+    #menu-line {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        padding-right: 1rem;
+    }
+    #icons {
+        display: flex;
+    }
+    .icon-data {
+        margin: 0;
+    }
+    #logo {
+        background-color: black; /*AB08A8*/
+        border-bottom: 0.5px solid rgba(255,255,255, .3);
+    }
+    .dosCol{
+        width: 10%;
+    }
+    nav, nav ul {
+        display: block;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        width: max-content;
+    }
+    nav ul li {
+        border-bottom: black solid 1px;
+        border-right: 0;
+        padding: 0;
+        text-align: center;
+    }
+    #page1, #page2, #page3, #page4, #page5, #page6, #page7 {
+        flex-direction: column;
+        padding-top: 6rem;
+        padding-bottom: 2rem;
+    }
+    #page1 {
+        padding-top: 7rem;
+    }
+    #page7 {
+        padding: 0;
+    }
+
+    h2, h3 {
+        align-self: center;
+    }
+    #content {
+        flex-direction: column;
+    }
+    #col1, #col2 {
+        width: 100%;
+    }
+    .botonVerTrailer {
+        margin: 0;
+    }
+    
+    .logoFooter {
+        width: 30%;
+        min-width: max-content;
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+    }
+    .video {
+        width: 300px;
+    }
+    #botones, #menu-line {
+        box-shadow: 0 0 15px rgba(0, 0, 0, .99);
+    }
+}
+
+@media (max-width:1000px) {
+    .colum1 {
+        width: 90%;
+        margin: auto;
+        margin-top: 2rem;
+    }
+    .colum2{
+        width: 95%;
+        margin: 0 auto;
+        padding: 0;
+        margin-top: 1rem;
+        border: 0;
+    }
+    .formulario {
+        width: 100%;
+        height: 100vh;
+    }
+}
+@media (max-width:700px) {
+    #page1 {
+        padding-top: 10rem;
+    }
+    #page3 {
+        /*padding-left: 0;*/
+        padding-right: 0;
+    }
+    #page2 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #page6, .text6 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .justificado {
+        width: 90%;
+        margin: auto;
+    }
+    .image1 {
+        width: 40%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    .logo{
+        width: 80%;
+        margin: auto;
+    }
+    #logo {
+        justify-content: center;
+    }
+    .image2 {
+        margin: 2rem 0;
+    }
+    .juegos, .cuerpoJuego{
+        width: 90%;
+        margin: auto;
+    }
+    .juegos {
+        padding: 0;
+    }
+    .divinferior {
+        height: max-content;
+    }
+    .colum1 {
+        width: 90%;
+        margin: auto;
+        margin-top: 2rem;
+    }
+    .colum2{
+        width: 95%;
+        margin: 0 auto;
+        padding: 0;
+        margin-top: 1rem;
+        border: 0;
+    }
+    .divsuperior{
+        height: max-content;
+    }
+    .tituloSeccion {
+        width: 80%;
+        margin: auto;
+        padding: 0;
+    }
+    .tituloJuego {
+        width: 80%;
+        margin: auto;
+    }
+    .botonVerTrailer {
+        margin-left: 0;
+        margin-right: 0;
+        width: 50%;
+    }
+    .botonGooglePlay{
+        width: 50%;
+    }
+    .integrantes {
+        padding-right: 0.5%;
+        margin-bottom: 1rem;
+        float: left;
+    }
+    .seccionlogo p {
+        width: 80%;
+        font-size: 1.3rem;
+        padding-bottom: 1rem;
+    }
+    .formulario {
+        width: 100%;
+        height: 100vh;
+    }
+    .redes {
+        min-width: max-content;
+        margin: 2rem auto;
+    }
+    h2, h3 {
+        font-size: 3rem;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+}
