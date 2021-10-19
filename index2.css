@@ -578,6 +578,30 @@ h1 {
     color: rgb(148, 148, 148);
 }
 
+/**** pagina politica de privacidad  ****/
+
+.body {
+    background-image: linear-gradient(0deg, #4A0B78 0%, #6F13B1 50%);
+    color: rgb(212, 209, 209);
+}
+.container-body {
+    width: 80%;
+    margin: auto;
+}
+.h1 {
+    color: white;
+    font-weight: bolder;
+}
+.titulo-amarillo {
+    color: yellow;
+    font-size: 1.3rem;
+}
+.enlaces {
+    color: pink;
+    font-style: italic;
+    font-weight: bold; 
+}
+
 
 @media (max-width:1280px) {
     .toggle-menu, #menu-line {
